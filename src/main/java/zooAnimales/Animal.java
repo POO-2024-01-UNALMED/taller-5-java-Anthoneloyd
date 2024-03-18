@@ -43,10 +43,10 @@ public class Animal {
 
     public String toString(){
         if (listado.size() == 0){
-            return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + ", y mi genero es " + genero;
+            return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero;
         }
         else{
-            return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + ", y mi genero es " + genero + ", la zona en la que me ubico es " + this.listado.get(0).getNombre() + ", en el " + this.listado.get(0).getZoo().getNombre();
+            return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero + ", la zona en la que me ubico es " + this.listado.get(0).getNombre() + ", en el " + this.listado.get(0).getZoo().getNombre();
         }
     }
 
