@@ -2,13 +2,15 @@ package zooAnimales;
 
 import gestion.Zona;
 
+import java.util.ArrayList;
+
 public class Animal {
     private static int totalAnimales;
     private String nombre;
     private int edad;
     private String habitat;
     private String genero;
-    private Zona zona;
+    private ArrayList<Zona> zona = new ArrayList<>();
 
     public Animal() {
         totalAnimales++;
@@ -40,7 +42,7 @@ public class Animal {
     }
 
     public String toString(){
-        if (zona == null){
+        if (zona.size() == 0){
             return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + ", y mi genero es " + genero;
         }
         else{
