@@ -20,8 +20,8 @@ public class Zoologico {
 
     public int cantidadTotalAnimales() {
         int cantAnimales = 0;
-        for (Zona zona : zonas) {
-            cantAnimales += zona.cantidadAnimales();
+        for (int i = 0; i < zonas.size(); i++) {
+            cantAnimales += zonas.get(i).cantidadAnimales();
         }
         return cantAnimales;
     }
